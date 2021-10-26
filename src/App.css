@@ -1,0 +1,99 @@
+/* code for boxes */
+
+body{
+  /* background-color: #1f1c18; */
+  font-family: 'Times New Roman', Times,serif;
+ 
+}
+header,
+main,
+footer{
+  background-color:orange;
+  margin: 20px;
+  padding: 20px;
+}
+h1{
+  padding-left: 10px;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 2rem;
+  justify-content: center;
+}
+
+.box{
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 0 5px #000000;
+  justify-items: center;
+  align-items: center;
+}
+
+footer{
+  text-align: center;
+}
+
+.test{
+  display: block;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  height: 100px auto;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+Button{
+  background-color: aqua;
+  padding: 10px;
+  margin: 20px;
+  border-color: #9c9898;
+}
+
+
+
+
+table{
+  border: 1px solid black;
+  display: flex;
+  padding: 20px;
+  padding: 20px;
+  justify-content: center;
+
+}
+td{
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  display: block;
+}
+
+td:nth-child(odd){
+  background-color: #aab69e;
+
+}
+td:nth-child(even){
+  background-color: #b4e780;
+
+}
+
+button{
+  display: block;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  padding: 1rem;
+}
+
+img{
+  width: 200px;
+  height: 100px;
+}
