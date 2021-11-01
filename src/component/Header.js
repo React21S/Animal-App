@@ -1,12 +1,14 @@
 import React from 'react';
 
+import Nav from './Nav';
+
 const Header = () => {
     return (
-        <div>
+
             <header>
-            <h1>Logo</h1>
+            <h1>Animal App</h1>
+            <Nav/>
             </header>
-        </div>
     );
 };
 

@@ -1,99 +1,98 @@
 /* code for boxes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
+  margin: 0;
   /* background-color: #1f1c18; */
-  font-family: 'Times New Roman', Times,serif;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
  
 }
 header,
-main,
 footer{
   background-color:orange;
-  margin: 20px;
   padding: 20px;
+  text-align: center;
+  
 }
+
 h1{
   padding-left: 10px;
 }
-main{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5rem 2rem;
-  justify-content: center;
+
+/* ######### head link ############# */
+li{
+  display:block;
+  list-style-type: none;
+  display: inline-block;
+  margin: 20px;
+  
+}
+.link{
+  text-decoration: none;
+
 }
 
+
+/* ######### box ############# */
 .box{
-  background-color: white;
-  padding: 20px;
+  background-color:snow;
   margin: 10px;
   width: 200px;
-  height: 200px;
+  display: inline-block;
   text-align: center;
   box-shadow: 0 0 5px #000000;
   justify-items: center;
   align-items: center;
+  filter: grayscale(100%);
+  transition: all 0.3s;
 }
+
+
+
+.box:hover{
+  box-shadow: 0 0 5px #000000;
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+.box h2 {
+  padding: 20px;
+}
+.box img{
+  width:100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+
+}
+.animalsList{
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 2rem;
+  justify-content: center;
+}
+/* ######### Footer ############# */
 
 footer{
   text-align: center;
 }
 
-.test{
-  display: block;
-  background-color: white;
-  padding: 20px;
-  margin: 20px;
-  height: 100px auto;
-  gap: 20px;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-}
-Button{
-  background-color: aqua;
-  padding: 10px;
-  margin: 20px;
-  border-color: #9c9898;
-}
 
-
-
-
-table{
-  border: 1px solid black;
-  display: flex;
-  padding: 20px;
-  padding: 20px;
-  justify-content: center;
-
-}
-td{
-  padding: 20px;
-  margin: 10px;
-  width: 300px;
-  display: block;
-}
-
-td:nth-child(odd){
-  background-color: #aab69e;
-
-}
-td:nth-child(even){
-  background-color: #b4e780;
-
-}
-
+/* ######### Button ############# */
 button{
-  display: block;
+
   background-color: green;
   color: white;
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 5px #333;
   padding: 1rem;
-}
-
-img{
-  width: 200px;
-  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
