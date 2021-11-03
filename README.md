@@ -7,7 +7,8 @@
 ## Animal Categories 
 ### when you refresh this page it random different categories of animal 
 ![screenshot](/img/animal-app.png)
-## Search for animal### you can insert the name of animal in search input and it fetch the animal
+## Search for animal
+### you can insert the name of animal in search input and it fetch the animal
 ![screenshot](/img/search.png)
 
 
