@@ -1,11 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router';
+import { useParams, useHistory} from 'react-router';
+
 
 const AnimalSingle = () => {
-    let {animal} = useParams();
+    let {animal, img} = useParams();
+    let history = useHistory();
+  
     return (
-        <div>
-            <h2>This is the page for {animal}</h2>
+        <div className="singleAnimal">
+            <h2>This is the page for {animal}{" "}</h2>
+            <div> this image {img}</div>
+            <div>
+                <button onClick={()=> history.goBack("/")}>Back to animals</button>
+            </div>
         </div>
     );
 };
