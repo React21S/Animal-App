@@ -34,7 +34,6 @@ h1{
 
 /* ######### head link ############# */
 ul li{
-  display:block;
   list-style-type: none;
   display: inline-block;
   margin: 20px;
@@ -139,7 +138,7 @@ padding: 20px;
 /* ######### Footer ############# */
 
 footer{
-  position: fixed;
+  /* position: fixed; */
   text-align: center;
   width: 100%;
   bottom: 0;
