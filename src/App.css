@@ -58,6 +58,7 @@ a{
   font-size: 20px;
   color: rgb(218, 211, 203);
   font-size: 1.5rem;
+  min-height: 80vh;
 
 }
 
@@ -77,6 +78,7 @@ a{
   text-align: center;
   color: rgb(218, 211, 203);
   font-size: 1.5rem;
+  min-height: 80vh;
 }
 
 .about h2, .home h1{
@@ -132,6 +134,7 @@ padding: 20px;
   justify-content: center;
   padding: 0 2rem;
   text-transform: capitalize;
+  min-height: 80vh;
 
 }
 
@@ -165,9 +168,10 @@ button{
 .singleAnimal{
   background-color: white;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   text-align: center;
+  
 }
 .singleAnimal h2{
   padding-top: 40px;
