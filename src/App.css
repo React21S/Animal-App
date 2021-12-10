@@ -177,6 +177,14 @@ button{
   padding-top: 40px;
 }
 
+.singleAnimal img{
+  padding-top: 40px;
+  
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
 /* ####### Input ####### */
 input
 {

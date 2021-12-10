@@ -1,15 +1,19 @@
 import React from 'react';
 import { useParams, useHistory} from 'react-router';
+import AnimalsBox from './AnimalsBox';
 
 
 const AnimalSingle = () => {
-    let {animal, img} = useParams();
+    let {animal} = useParams();
     let history = useHistory();
   
     return (
         <div className="singleAnimal">
-            <h2>This is the page for {animal}{" "}</h2>
-            <div> this image {img}</div>
+            <h2>This is the page for {animal}</h2>
+            <div> {<img src={`https://source.unsplash.com/1600x900/?${animal.name}`} alt = "animal"/>}</div>
+            
+{/*        
+        <AnimalsBox /> */}
             <div>
                 <button onClick={()=> history.goBack("/")}>Back to animals</button>
             </div>
