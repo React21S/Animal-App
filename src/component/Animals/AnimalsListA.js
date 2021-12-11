@@ -16,8 +16,7 @@ const AnimalsList = () => {
         <div className="animalsList">
           <Switch>
             <Route exact path ={match.path}>{animalsListing}</Route>
-            <Route path ={`${match.path}/:animal`}><AnimalSingle/></Route>
-            
+            <Route path ={`${match.path}/:animal`}> <AnimalSingle/></Route>
           </Switch>
              
       

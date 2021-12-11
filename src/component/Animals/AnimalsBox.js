@@ -10,8 +10,7 @@ const AnimalsBox = (animal) => {
         <div className="box">
             <img src={`https://source.unsplash.com/1600x900/?${animal.name}`} alt = "animal"/>
             <h2>{animal.name}</h2>
-           
-            <Link  to={`${match.url}/${animal.name}`}>Read more</Link>
+            <Link  to={`${match.url}/${animal.name} `}>Read more</Link>
         </div>
     );
 };

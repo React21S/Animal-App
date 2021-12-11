@@ -179,8 +179,7 @@ button{
 
 .singleAnimal img{
   padding-top: 40px;
-  
-  height: 500px;
+  height: 200px;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
