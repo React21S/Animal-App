@@ -4,7 +4,6 @@ import React from "react";
 import { Switch, Route, useRouteMatch } from 'react-router';
 import AnimalSingle from "./AnimalSingle"
 
-
 const AnimalsList = () => {
   const match = useRouteMatch();
   const animalsListing =  animals.map((item) => (

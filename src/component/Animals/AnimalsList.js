@@ -4,18 +4,15 @@ import AnimalsBox from "./AnimalsBox";
 import { Switch, Route} from 'react-router';
 import AnimalSingle from "./AnimalSingle";
 
-
 class AnimalsList extends Component {
   state = {
     searchInput:"",
   }
 
-
   searchInputHandler=(event)=>{
     this.setState({searchInput:event.target.value});
   };
     
-
   render() {
 
     const animalFilter = animals.filter(animal=>{
@@ -44,6 +41,3 @@ class AnimalsList extends Component {
 }
 
 export default AnimalsList;
-
-
-

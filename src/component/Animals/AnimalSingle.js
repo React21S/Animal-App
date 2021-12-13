@@ -1,11 +1,6 @@
 import React from 'react';
 import { useParams, useHistory} from 'react-router';
 
-
-
-
-
-
 const AnimalSingle = () => {
 
     let {animal} = useParams();

@@ -15,5 +15,4 @@ const AnimalsBox = (animal) => {
     );
 };
 
-
 export default AnimalsBox;
