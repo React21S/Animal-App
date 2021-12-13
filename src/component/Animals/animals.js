@@ -1,7 +1,7 @@
 export const animals = [
   { name: "alligator"},
   { name: "alpaca" },
-  { name: "ant", price:"100€" },
+  { name: "ant"},
   { name: "anteater" },
   { name: "antelope" },
   { name: "ape" },
