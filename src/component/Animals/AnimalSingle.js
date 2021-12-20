@@ -2,10 +2,11 @@ import React from 'react';
 import { useParams, useHistory} from 'react-router';
 
 const AnimalSingle = () => {
-
+     
     let {animal} = useParams();
+    
     let history = useHistory();
-  
+
     return (
         <div className="singleAnimal">
            <div className="result">

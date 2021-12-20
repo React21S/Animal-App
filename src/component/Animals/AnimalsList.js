@@ -4,6 +4,7 @@ import AnimalsBox from "./AnimalsBox";
 import { Switch, Route} from 'react-router';
 import AnimalSingle from "./AnimalSingle";
 
+ 
 class AnimalsList extends Component {
   state = {
     searchInput:"",
@@ -31,8 +32,7 @@ class AnimalsList extends Component {
             <div className="search"><label htmlFor="animal">Animal search
               <input name = "animal" type="text" onChange={this.searchInputHandler} placeholder="Type animal's name"/></label></div>
               {animalsListing}</Route>
-            
-            <Route path ={`${this.props.match.path}/:animal`}><AnimalSingle/></Route>
+            <Route path ={`${this.props.match.path}/:animal`}><AnimalSingle /></Route>
           </Switch>
         </main>
       </div>
