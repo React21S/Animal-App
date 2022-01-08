@@ -15,6 +15,7 @@ const AnimalSingle = () => {
             <div>
                 <button onClick={()=> history.goBack("/")}>Back to animals</button>
             </div>
+            <div className="wiki"> <a href={`https://en.wikipedia.org/wiki/${animal}`} target="_blank" rel="noreferrer" > check more about {animal}</a></div>
            </div>
         </div>
     );

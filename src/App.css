@@ -198,7 +198,7 @@ a{
 .box:hover{
   box-shadow: 0 0 5px #000000;
   filter: grayscale(0%);
-  transform: scale(1.2);
+  transform: scale(0.8);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -216,6 +216,7 @@ padding: 20px;
 .animalsList{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   padding: 0 2rem;
   text-transform: capitalize;
@@ -273,9 +274,10 @@ button{
 .singleAnimal{
   background-color: white;
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   text-align: center;
+  top: 0;
 }
 .singleAnimal h2{
   padding-top: 40px;
@@ -290,20 +292,29 @@ button{
   margin-top: 50px;
   display: inline-block;
   box-shadow: 0 0 5px #000000;
-  width: 400px;
+  width: 300px;
   border-radius: 5px;
   text-transform: none;
   transition: 0.2s;
   
 }
 .singleAnimal .result:hover{
-  transform: scale(1.2);
+  transform: scale(0.8);
   transition: 0.2s;
 }
 
 .singleAnimal button:hover{
 background-color: #ffa500;
 
+}
+.wiki{
+  padding-bottom: 20px;
+}
+.wiki a{
+  color: var(--black) ;
+}
+.wiki a:hover{
+  color: var(--yellow-6) ;
 }
 
 /* ####### Input ####### */
@@ -313,7 +324,7 @@ input
   border-radius: 10px;
   outline: none;
   font-size: 20px;
-  width: 40%;
+  width: 70%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   border-width: 10px;
@@ -332,5 +343,97 @@ label {
   text-align: center;
   background-color: burlywood;
   width: 100vw;
+}
 
+@media screen and (max-width:568px) {
+  /* home */
+  .home img{
+    width: 300px;
+    height: 200px;
+  }
+  .home{
+    margin: 10px auto;
+    font-size: 10px;
+    min-height: 70vh;
+  }
+  ul li{
+    margin: 10px;
+    font-size: 20px;
+  }
+  .home h1{
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .home h3{
+    padding-top: 5px;
+    font-size: 10px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  /* About */
+
+  .about h2{
+    padding: 10px; 
+    font-size: 12px;
+  }
+  
+  .about h3{
+    padding: 1px;
+    font-size: 10px;
+  }
+  .about{
+    min-height: 60vh;
+  }
+
+  /* animal search */
+  input
+  {
+ width: 250px;
+  border-width: 5px;
+  margin-left: -50px;
+  }
+
+  label {
+    widows: 300px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* main */
+  main{
+    padding: 0;
+    text-align: center;
+  }
+
+  .box{
+    margin: 10px;
+    width: 250px;
+  } 
+}
+
+@media screen and (min-width:569px) and (max-width:768px) {
+  /* home */
+  .home img{
+    width: 500px;
+    height: 400px;
+  }
+  /* about */
+  .about h2{
+    padding: 10px; 
+    font-size: 30px;
+  }
+  
+  .about h3{
+    padding: 1px;
+    font-size: 25px;
+  }
+  .about{
+    min-height: 70vh;
+  }
+
+  main{
+    padding: 0;
+  }
 }
